@@ -21,7 +21,7 @@ function App() {
 
   const getData = () => {
     axios.get("/users?page=2").then(({ data: seeData }) => console.log(seeData));
-    // axios.get("https://jsonplaceholder.typicode.com/todos/1").then((res) => console.log(res));
+    axios.get("https://jsonplaceholder.typicode.com/todos/1").then((res) => console.log(res));
   };
 
   const config = {
